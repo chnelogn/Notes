@@ -1,0 +1,44 @@
+1.TensorFlow实战Google深度学习框架
+    通过pip安装TensorFlow：
+      1.sudo apt-get install python-pip python-dev
+      2.#Ubuntun/Linux 64-bit ,Python 2.7环境
+        export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.9.0-cp27-none-linux_x86_64.whl
+        #Ubuntun/Linux 64-bit ,Python 3.4环境
+        export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.9.0-cp34-cp34m-linux_x86_64.whl
+      3.#Python 2环境
+        sudo pip install --upgrade $TF_BINARY_URL
+        #Python 3环境
+        sudo pip3 install --upgrade $TF_BINARY_URL
+        
+        
+    TensorFlow环境搭建（P37-P51）
+        TensorFlow依赖的两个最主要的工具包：Protocol Buffer和Bazal。
+        Protocol是谷歌开发的处理结构化数据的工具，例如：
+          name:张三
+          id：12345
+          email：zhangsan@adc.com
+        当要将这些结构化的用户信息持久化或者进行网络传输时，就需要先将他们进行序列化，所谓的序列化就是将结构化的数据变成数据流的格式。如何将结构化的
+        数据序列化，并从序列化之后的数据流中还原出原来的结构化数据，统称为结构化数据，这就是Protocol Buffer解决的主要问题。
+        除Protocol Buffer之外，XML和JSON是两种比较常见的结构化数据处理工具。例如：
+          XML:
+          <user>
+            <name>张三</name>
+            <id>12345</id>
+            <email>zhangsan@abc.com</email>
+          </user>   
+          JSON:
+          {
+            "name":"张三",
+            "id":"12345",
+            "email":"zhangsan@abc.com",
+          }
+        Protocol Buffer序列化之后的数据不是可读的字符串，而是二进制流；
+        XML和JSON格式的数据信息都包含在了序列化之后的数据中，不需要任何信息就能还原序列化之后的数据；但使用Protocol Buffer时需要先定义数据的格式（sc
+        hema）。因此Protocol Buffer序列化出来的数据要比XML和JSON格式的数据小3-10倍，解析时间要快20-100倍
+        
+    TensorFlow入门知识（P52）
+        1.计算图
+          计算图是TensorFlow中最基本的一个概念，TensorFlow中所有计算都会被转化为计算图上的节点，而节点之间的边描述了计算之间的依赖关系。
+          TensorFlow程序一般可以分为两个阶段。在第一个阶段需要定义计算图中所有的计算；第二个阶段为执行计算。
+          在第一个阶段，TensorFlow会自动将定义的计算转化为计算图上的节点。在TensorFlow程序中，系统会自动维护一个默认的计算图，通过tf.get_default_gr
+          aph函数可以获取当前默认的计算图。
