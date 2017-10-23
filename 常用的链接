@@ -11,3 +11,9 @@ Kaggle:
 
 C++:
 1.http://c.biancheng.net/cpp/biancheng/view/185.html    C++ baisc learning
+
+dos常用命令：
+dir == ls
+cd (打开路径)
+md (建立路径)
+rd (删除路径)
