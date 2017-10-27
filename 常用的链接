@@ -12,6 +12,21 @@ Kaggle:
 C++:
 1.http://c.biancheng.net/cpp/biancheng/view/185.html    C++ baisc learning
 
+GitHub
+1.karpathy/char-rnn · GitHub ：一个基于RNN的文本生成器。可以自动生成莎士比亚的剧本或者shell代码。
+phunterlau/wangfeng-rnn · GitHub ： 基于char-rnn的汪峰歌词生成器
+google/deepdream · GitHub ：画出神经网络眼中的世界
+facebook/MemNN · GitHub ：memnn的一个官方实现。可以回答诸如“小明在操场；小王在办公室；小明捡起了足球；小王走进了厨房。问：小王在去厨房前在哪里？”，这样涉及推理和理解的问题。
+skaae/lasagne-draw · GitHub ：用RNN生成手写数字。
+keras/addition_rnn.py at master · fchollet/keras · GitHub ：用RNN自动学会则。
+karpathy/neuraltalk · GitHub ：自动根据图像生成文本描述。
+ryankiros/neural-storyteller · GitHub: 看图讲故事
+karpathy/neuraltalk2 · GitHub：看图生成标注
+jcjohnson/neural-style · GitHub：将照片变成大师风格的绘画
+Newmu/dcgan_code · GitHub: 卷积生成式对抗网络，生成图像
+nagadomi/waifu2x · GitHub：CNN来放大动漫图片
+
+
 dos常用命令：
 dir == ls
 cd (打开路径)
