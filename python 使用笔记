@@ -1,0 +1,28 @@
+1.numpy.eye(N,M=None, k=0, dtype=<type 'float'>)
+第一个参数：输出方阵（行数=列数）的规模，即行数或列数
+第三个参数：默认情况下输出的是对角线全“1”，其余全“0”的方阵，如果k为正整数，则在右上方第k条对角线全“1”其余全“0”，k为负整数则在左下方第k条对角线全“1”其余
+	全“0”。
+eg：np.eye(2, dtype=int)
+		np.eye(3, k=1)
+
+2.open
+f = open('a.txt', 'r')
+f = open('c:\text\a.txt','r')
+
+3.readlines 和 readline
+readlines() 自动将文件内容分析成一个行的列表
+	eg:
+	for  line in  fh.readlines(): 
+  print  line
+readline() 每次只读取一行，通常比 .readlines() 慢得多。仅当没有足够内存可以一次读取整个文件时，才应该使用 .readline()。
+
+4.np.zeros
+返回一个给定形状和类型的用0填充的矩阵或者向量，默认类型numpy.float64
+eg：向量：
+		np.zeros(5)
+		np.zeros(5,dtype = int)
+		矩阵：
+		np.zeros((2,1))
+		np.zeros((2,1),dtype = int)
+
+5.
