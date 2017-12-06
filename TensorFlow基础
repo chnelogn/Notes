@@ -1,3 +1,0 @@
-1.TensorFlow系统架构
-Tensorflow自顶向下可以分为设备层、网络层、数据操作层、图计算层、API层、应用层，其中设备层、网络层、数据操作层、图计算层是Tensorflow的核心层
-2.Tensorflow设计理念
